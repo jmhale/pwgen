@@ -1,7 +1,9 @@
 import random
 import string
+import os
 
-word_file = "/usr/share/dict/words"
+dirname = os.path.dirname(__file__)
+word_file = os.path.join(dirname, 'word-lists/words_alpha.txt')
 WORDS = open(word_file).read().splitlines()
 secure_random = random.SystemRandom()
 
