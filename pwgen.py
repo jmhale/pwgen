@@ -13,7 +13,8 @@ def rand_word():
 
 
 def rand_punct():
-    return(secure_random.choice(string.punctuation))
+    good_chars = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "<", ">", "[", "]", "{", "}", "|", "_", "+", "-"]
+    return(secure_random.choice(good_chars))
 
 
 def gen_pw():
